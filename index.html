@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChakraSec — Mobile Security Research</title>
-  <meta name="description" content="Mobile security research and development focused on detecting and responding to advanced Android malware." />
+  <title>ChakraSec — AI Security Services</title>
+  <meta name="description" content="AI security services for enterprise GenAI, RAG, and agentic systems — threat modeling, architecture review, and secure-by-design guidance." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -262,7 +262,7 @@
 
     .focus-item {
       background: var(--bg);
-      padding: 2.25rem 2rem;
+      padding: 2.5rem 2.25rem;
       transition: background 0.25s;
       cursor: default;
     }
@@ -277,7 +277,7 @@
     }
 
     .focus-title {
-      font-size: 16px;
+      font-size: 17px;
       font-weight: 600;
       color: var(--text);
       margin-bottom: 0.6rem;
@@ -287,6 +287,34 @@
       font-size: 14px;
       color: var(--text-muted);
       line-height: 1.65;
+      margin-bottom: 1.1rem;
+    }
+
+    .focus-sublist {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+    .focus-sublist li {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      padding-left: 1.1rem;
+      position: relative;
+      margin-bottom: 0.85rem;
+    }
+    .focus-sublist li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent-mid);
+    }
+    .focus-sublist li strong {
+      color: var(--text-mid);
+      font-weight: 600;
     }
 
     /* Who we serve */
@@ -438,10 +466,10 @@
   <!-- Hero -->
   <section class="hero" id="about">
     <div class="hero-content">
-      <p class="hero-eyebrow">Mobile Security Research &amp; Development</p>
-      <h1>Protection that was once reserved<br>for the <em>privileged few</em></h1>
+      <p class="hero-eyebrow">AI Security Services</p>
+      <h1>Security review for systems<br>that <em>act on their own</em></h1>
       <p class="hero-desc">
-        We research and build defences against the most advanced Android malware — making military-grade mobile security accessible to everyone who needs it, not just those who can afford it.
+        We help enterprises adopt GenAI, RAG, and agentic systems without inheriting the risks that come with them — through rigorous threat modeling, architecture review, and secure-by-design guidance.
       </p>
       <a class="hero-cta" href="#focus">
         What we do
@@ -501,7 +529,7 @@
     <div class="container reveal">
       <p class="section-label">What we believe</p>
       <div class="belief-block">
-        <p>The common public deserves to be protected by <strong>military-grade cyber security defences</strong> — the kind long reserved for Fortune 500 companies and their resources. That inequity is the problem we exist to correct.</p>
+        <p>AI systems that <strong>act, retrieve, and decide</strong> need to be secured by design, not audited after the fact. Most GenAI and agentic deployments are shipped faster than the threat models that should govern them — that gap is what we close.</p>
       </div>
     </div>
   </section>
@@ -510,28 +538,26 @@
   <section id="focus">
     <div class="container reveal">
       <p class="section-label">What we do</p>
-      <h2>Research-led, <em>mission-driven</em></h2>
-      <p>Our work spans the full spectrum — from deep technical research into Android malware to direct, hands-on engagement with individuals and organisations facing real threats.</p>
+      <h2>Two services, <em>one discipline</em></h2>
+      <p>We work with engineering and security teams adopting GenAI, RAG, and agentic systems — reviewing what's being built, and helping architect what comes next.</p>
       <div class="focus-grid">
         <div class="focus-item">
           <p class="focus-num">01</p>
-          <p class="focus-title">Research &amp; Development</p>
-          <p class="focus-desc">Deep technical investigation into advanced Android malware — static analysis, behavioural detection, obfuscation unpacking, and novel detection methods.</p>
+          <p class="focus-title">Threat Modeling &amp; Security Architecture Review</p>
+          <p class="focus-desc">For GenAI, RAG, and agentic systems — structured around STRIDE and MITRE ATLAS, mapped to the OWASP Top 10 for LLM Applications and the OWASP Agentic AI (ASI) framework.</p>
+          <ul class="focus-sublist">
+            <li><strong>Application-layer risk:</strong> prompt injection, jailbreaking, excessive agency, insecure tool/plugin permissions, model context data exfiltration, and RAG/vector store poisoning.</li>
+            <li><strong>Agent identity &amp; control:</strong> least-privilege tool access, human-in-the-loop approval gates — code-enforced vs. prompt-level — audit trails, and kill-switch/escalation controls for autonomous and multi-agent systems.</li>
+          </ul>
         </div>
         <div class="focus-item">
           <p class="focus-num">02</p>
-          <p class="focus-title">Targeted Product Development</p>
-          <p class="focus-desc">Building detection and response tooling designed for high-risk individuals and the organisations that support them — not enterprise IT departments.</p>
-        </div>
-        <div class="focus-item">
-          <p class="focus-num">03</p>
-          <p class="focus-title">Professional Services</p>
-          <p class="focus-desc">Direct assistance to people and organisations targeted by sophisticated cyber threats — incident analysis, device forensics, and response guidance.</p>
-        </div>
-        <div class="focus-item">
-          <p class="focus-num">04</p>
-          <p class="focus-title">Consulting &amp; Proactive Defence</p>
-          <p class="focus-desc">Engagements for organisations seeking to build resilient, proactive defences before threats materialise — not reactive scrambles after the fact.</p>
+          <p class="focus-title">Secure-by-Design Support</p>
+          <p class="focus-desc">Helping clients build it securely from the outset, not retrofit security after launch.</p>
+          <ul class="focus-sublist">
+            <li><strong>Patterns &amp; decisions:</strong> secure-by-design patterns and Architecture Decision Records (ADRs) for enterprise GenAI/LLM adoption.</li>
+            <li><strong>Reference architectures:</strong> trust boundary modeling, data governance, and applied AI risk frameworks, tailored to the client's existing stack and controls.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -541,34 +567,20 @@
   <section id="who">
     <div class="container reveal">
       <p class="section-label">Who we serve</p>
-      <h2>Built around the people <em>most at risk</em></h2>
+      <h2>Built for teams shipping <em>real AI systems</em></h2>
       <ul class="serve-list">
         <li class="serve-item">
           <div class="serve-dot"></div>
           <div>
-            <p class="serve-title">Investigative journalists</p>
-            <p class="serve-desc">Reporters working sensitive beats where device compromise is a documented and present risk — not a theoretical one.</p>
+            <p class="serve-title">Large enterprise clients</p>
+            <p class="serve-desc">Organisations adopting GenAI, RAG, and agentic systems at scale, where security architecture decisions made early carry forward across many teams and products.</p>
           </div>
         </li>
         <li class="serve-item">
           <div class="serve-dot"></div>
           <div>
-            <p class="serve-title">Human rights activists &amp; civil society organisations</p>
-            <p class="serve-desc">Individuals and groups operating in environments where targeted digital surveillance is an active tool of suppression.</p>
-          </div>
-        </li>
-        <li class="serve-item">
-          <div class="serve-dot"></div>
-          <div>
-            <p class="serve-title">Digital security practitioners</p>
-            <p class="serve-desc">Trainers and advisors working with high-risk communities who need accurate, current threat intelligence to do their work effectively.</p>
-          </div>
-        </li>
-        <li class="serve-item">
-          <div class="serve-dot"></div>
-          <div>
-            <p class="serve-title">Executives &amp; high-value individuals</p>
-            <p class="serve-desc">Corporate leaders and M&amp;A targets facing sophisticated surveillance tied to business intelligence or competitive pressure.</p>
+            <p class="serve-title">Medium-sized clients</p>
+            <p class="serve-desc">Growing organisations building their first production GenAI or agentic deployments, looking to get the architecture and controls right before they scale.</p>
           </div>
         </li>
       </ul>
@@ -579,12 +591,12 @@
   <section id="research">
     <div class="container reveal">
       <p class="section-label">Research</p>
-      <h2>Published findings &amp; <em>threat intelligence</em></h2>
-      <p>We publish malware analyses, detection research, and field intelligence as work is completed. All available on our Substack.</p>
-      <a class="research-card" href="https://chakrasec.substack.com" target="_blank" rel="noopener">
+      <h2>Notes from the <em>field</em></h2>
+      <p>We publish write-ups on AI/LLM threat modeling, agentic system risk, and secure-by-design practice as work is completed. All available on our Substack.</p>
+      <a class="research-card" href="https://substack.com" target="_blank" rel="noopener">
         <div>
           <p class="research-title">ChakraSec Research — Substack</p>
-          <p class="research-sub">Malware analyses, threat intelligence, and field notes from our team.</p>
+          <p class="research-sub">AI security architecture notes, threat modeling write-ups, and field observations from our engagements.</p>
         </div>
         <span class="research-arrow">↗</span>
       </a>
@@ -596,7 +608,7 @@
     <div class="container reveal">
       <p class="section-label">Contact</p>
       <h2>Get in touch</h2>
-      <p style="max-width: 520px;">We welcome contact from security researchers, civil society organisations with samples or intelligence to share, and individuals who believe they may be targeted. If you're facing a threat, reach out.</p>
+      <p style="max-width: 520px;">If your team is building with GenAI, RAG, or agentic systems and wants a second set of eyes on the architecture, we'd like to hear from you.</p>
       <a class="contact-link" href="mailto:hv@chakra.group">hv@chakra.group →</a>
     </div>
   </section>
@@ -625,7 +637,7 @@
         </g>
         <text x="59" y="36" font-family="Georgia, serif" font-size="24" font-weight="700" fill="#9a9188" letter-spacing="-0.5">ChakraSec</text>
       </svg>
-      <span class="footer-copy">&copy; 2025 ChakraSec — Mobile Security Research</span>
+      <span class="footer-copy">&copy; 2025 ChakraSec — AI Security Services</span>
     </div>
   </footer>
 
